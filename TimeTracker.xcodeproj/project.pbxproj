@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1131648E24CBD9A0005A72B2 /* KSITimedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1131648D24CBD9A0005A72B2 /* KSITimedTask.m */; };
+		1131649124CBD9E3005A72B2 /* KSITimedTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1131649024CBD9E3005A72B2 /* KSITimedTaskController.m */; };
+		11CC098C24CBDE980031D055 /* KSIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CC098B24CBDE980031D055 /* KSIViewController.m */; };
 		467FC83C23F3738B00C15592 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FC83B23F3738B00C15592 /* AppDelegate.m */; };
 		467FC83F23F3738B00C15592 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FC83E23F3738B00C15592 /* SceneDelegate.m */; };
 		467FC84523F3738B00C15592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467FC84323F3738B00C15592 /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1131648C24CBD9A0005A72B2 /* KSITimedTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSITimedTask.h; path = TimeTracker/KSITimedTask.h; sourceTree = SOURCE_ROOT; };
+		1131648D24CBD9A0005A72B2 /* KSITimedTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSITimedTask.m; path = TimeTracker/KSITimedTask.m; sourceTree = SOURCE_ROOT; };
+		1131648F24CBD9E3005A72B2 /* KSITimedTaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSITimedTaskController.h; path = TimeTracker/KSITimedTaskController.h; sourceTree = SOURCE_ROOT; };
+		1131649024CBD9E3005A72B2 /* KSITimedTaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSITimedTaskController.m; path = TimeTracker/KSITimedTaskController.m; sourceTree = SOURCE_ROOT; };
+		11CC098A24CBDE980031D055 /* KSIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSIViewController.h; path = TimeTracker/KSIViewController.h; sourceTree = SOURCE_ROOT; };
+		11CC098B24CBDE980031D055 /* KSIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSIViewController.m; path = TimeTracker/KSIViewController.m; sourceTree = SOURCE_ROOT; };
 		467FC83723F3738B00C15592 /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467FC83A23F3738B00C15592 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		467FC83B23F3738B00C15592 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +102,8 @@
 		467FC85B23F3768C00C15592 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1131648C24CBD9A0005A72B2 /* KSITimedTask.h */,
+				1131648D24CBD9A0005A72B2 /* KSITimedTask.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +111,8 @@
 		467FC85C23F376B400C15592 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				11CC098A24CBDE980031D055 /* KSIViewController.h */,
+				11CC098B24CBDE980031D055 /* KSIViewController.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -107,6 +120,8 @@
 		467FC85D23F3784C00C15592 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1131648F24CBD9E3005A72B2 /* KSITimedTaskController.h */,
+				1131649024CBD9E3005A72B2 /* KSITimedTaskController.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -137,6 +152,7 @@
 		467FC82F23F3738B00C15592 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KSI;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
@@ -182,7 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				467FC83C23F3738B00C15592 /* AppDelegate.m in Sources */,
+				11CC098C24CBDE980031D055 /* KSIViewController.m in Sources */,
+				1131649124CBD9E3005A72B2 /* KSITimedTaskController.m in Sources */,
 				467FC84D23F3738C00C15592 /* main.m in Sources */,
+				1131648E24CBD9A0005A72B2 /* KSITimedTask.m in Sources */,
 				467FC83F23F3738B00C15592 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,13 +343,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = V5ARGK4ZJP;
 				INFOPLIST_FILE = TimeTracker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LambdaSchool.TimeTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinStewart.about;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,13 +360,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = V5ARGK4ZJP;
 				INFOPLIST_FILE = TimeTracker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LambdaSchool.TimeTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinStewart.about;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
