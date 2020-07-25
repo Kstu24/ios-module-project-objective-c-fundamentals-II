@@ -65,8 +65,8 @@
 {
     self.clientNameTextField.text = self.client;
     self.clientSummaryTextField.text = self.clientSummary;
-    self.hourlyrateTextField.text = [NSString localizedStringWithFormat:@"%f", self.hourlyRate];
-    self.amountOfHoursWorkedTextField.text = [NSString localizedStringWithFormat:@"%f", self.amountOfHoursWorked];
+    self.hourlyrateTextField.text = [NSString localizedStringWithFormat:@"%.1f", self.hourlyRate];
+    self.amountOfHoursWorkedTextField.text = [NSString localizedStringWithFormat:@"%.f", self.amountOfHoursWorked];
 }
 
 - (void)saveTimedTask
@@ -115,7 +115,7 @@
     KSITimedTask *timedTask = [self.ksiTimedTaskController timedTasksAtIndex:indexPath.row];
 
     cell.textLabel.text = timedTask.client;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%f", timedTask.total];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"$%0.2f", timedTask.total];
 
     return cell;
 }
